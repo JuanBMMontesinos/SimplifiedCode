@@ -8,6 +8,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.firebase.client.DataSnapshot;
 import com.firebase.client.Firebase;
@@ -33,6 +34,17 @@ public class MainActivity extends AppCompatActivity {
         textViewPersons = (TextView) findViewById(R.id.textViewPersons);
 
         Firebase.setAndroidContext(this);
+
+        editTextName.setOnFocusChangeListener(new View.OnFocusChangeListener() {
+            @Override
+            public void onFocusChange(View v, boolean hasFocus) {
+                if(hasFocus){
+                    Toast.makeText(getApplicationContext(), "got the focus", Toast.LENGTH_SHORT).show();
+                }else {
+                    Toast.makeText(getApplicationContext(), "lost the focus", Toast.LENGTH_SHORT).show();
+                }
+            }
+        });
 
         editTextName.addTextChangedListener(new TextWatcher() {
             @Override
