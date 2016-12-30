@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "246752478494",
+    "firebase_url": "https://simplifiedprojecttemptest.firebaseio.com",
+    "project_id": "simplifiedprojecttemptest",
+    "storage_bucket": "simplifiedprojecttemptest.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:246752478494:android:94dea31c41a0c3a0",
+        "android_client_info": {
+          "package_name": "online.upcare.f4hupcaregroup.simplifiedcode"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "246752478494-1ktd2r7d39mkod8b6q7t50l2lrt0eo2r.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "online.upcare.f4hupcaregroup.simplifiedcode",
+            "certificate_hash": "150AD75F0BA341767CEB203E28B129B0FC62142E"
+          }
+        },
+        {
+          "client_id": "246752478494-7rkajcdptccm4b1499dsjlfc56gfn9as.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBlPAcxozk17Ww_QN8rqC7GOD-E9tfycwM"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "246752478494-7rkajcdptccm4b1499dsjlfc56gfn9as.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
