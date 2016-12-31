@@ -4,6 +4,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.text.Editable;
 import android.text.TextWatcher;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -14,6 +15,7 @@ import com.firebase.client.DataSnapshot;
 import com.firebase.client.Firebase;
 import com.firebase.client.FirebaseError;
 import com.firebase.client.ValueEventListener;
+import com.google.firebase.iid.FirebaseInstanceId;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -26,6 +28,11 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        String refreshedToken = FirebaseInstanceId.getInstance().getToken();
+
+        //Displaying token on logcat
+        Log.d("MeuLogX", "Refreshed token: " + refreshedToken);
 
         buttonSave = (Button) findViewById(R.id.buttonSave);
         editTextName = (EditText) findViewById(R.id.editTextName);
